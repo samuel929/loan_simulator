@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { calculate, defaults, payment, validate } from "./loan";
+import { calculate, payment, validate } from "./loan";
+import { defaults } from "./types/types";
 describe("affordability model", () => {
   it("calculates an amortised repayment and reconciles totals", () => {
     const r = calculate(defaults);

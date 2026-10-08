@@ -16,14 +16,15 @@ import {
 } from "lucide-react";
 import {
   calculate,
-  defaults,
+
   money,
-  purposes,
+
   validate,
-  type Inputs,
+ 
   type Errors,
   type Result,
 } from "./loan";
+import { defaults, Inputs, purposes } from "./types/types";
 export default function App() {
   const [values, setValues] = useState<Inputs>({ ...defaults });
   const [result, setResult] = useState<Result>(() => calculate(defaults));
