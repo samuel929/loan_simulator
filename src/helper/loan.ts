@@ -1,4 +1,4 @@
-import { Inputs, purposes } from "./types/types";
+import { Inputs, purposes } from "../types/types";
 
 export type Errors = Partial<Record<keyof Inputs, string>>;
 export function validate(v: Inputs): Errors {

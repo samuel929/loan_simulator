@@ -23,7 +23,7 @@ import {
  
   type Errors,
   type Result,
-} from "./loan";
+} from "./helper/loan";
 import { defaults, Inputs, purposes } from "./types/types";
 export default function App() {
   const [values, setValues] = useState<Inputs>({ ...defaults });
